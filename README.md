@@ -4,15 +4,15 @@ Flutter SVGL is an open-source Flutter package that provides a collection of hig
 
 This package is powered by the official [pheralb/svgl](https://github.com/pheralb/svgl) repository, which maintains a wide range of SVG logos for various brands and organizations.
 
+**Remember to request permission from the creators for the use of the SVG. Modification is not allowed.**
+
 ## ✨ Features
 
 - [x] **Pre-built SVG Logo Widgets** -Access branded logos easily via simple static getters (e.g., SVGL.Figma).
 
 - [x] **Easy Integration** - No need to manage SVG assets manually—just import and use.
 
-- [x] **Light & Dark Mode Friendly** - Logos render crisply and adapt well to different themes.
-
-- [x] **Scalable & Customizable** -Pass optional `width`, `height`, and `color` parameters to adjust icons dynamically.
+- [x] **Scalable & Customizable** -Pass optional `width`, `height`, and `colorFilter` parameters to adjust icons dynamically.
 
 ## 🚀 Getting Started
 
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text('Flutter SVGL Example')),
         body: Center(
-          child: SVGL.ai.midday(width: 100, height: 100, color: Colors.blue),
+          child: SVGL.ai.midday(width: 100, height: 100, colorFilter: ColorFilter.mode(Colors.blue, BlendMode.srcIn)),
         ),
       ),
     );

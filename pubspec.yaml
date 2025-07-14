@@ -19,6 +19,53 @@ dev_dependencies:
 
 flutter:
   assets:
+    - assets/ai/anthropic.svg
+    - assets/ai/anthropic_wordmark.svg
+    - assets/ai/basewell.svg
+    - assets/ai/buildship.svg
+    - assets/ai/claude.svg
+    - assets/ai/claude_wordmark.svg
+    - assets/ai/codium.svg
+    - assets/ai/cody.svg
+    - assets/ai/cohere.svg
+    - assets/ai/cohere_wordmark.svg
+    - assets/ai/deepseek.svg
+    - assets/ai/deepseek_workdmark.svg
+    - assets/ai/firebase_studio.svg
+    - assets/ai/gemini.svg
+    - assets/ai/gemini_wordmark.svg
+    - assets/ai/google_palm.svg
+    - assets/ai/groq.svg
+    - assets/ai/groq_wordmark.svg
+    - assets/ai/grok.svg
+    - assets/ai/grok_wordmark.svg
+    - assets/ai/hugging_face.svg
+    - assets/ai/hume.svg
+    - assets/ai/inflection.svg
+    - assets/ai/inflection_wordmark.svg
+    - assets/ai/locofy.svg
+    - assets/ai/lovable.svg
+    - assets/ai/mcp.svg
+    - assets/ai/mcp_wordmark.svg
     - assets/ai/midday.svg
     - assets/ai/mistral.svg
     - assets/ai/mocha.svg
+    - assets/ai/ollama.svg
+    - assets/ai/open_ai.svg
+    - assets/ai/open_ai_wordmark.svg
+    - assets/ai/open_router.svg
+    - assets/ai/open_webui.svg
+    - assets/ai/perplexity_ai.svg
+    - assets/ai/perplexity_ai_wordmark.svg
+    - assets/ai/poper.svg
+    - assets/ai/qwen.svg
+    - assets/ai/replicate.svg
+    - assets/ai/replicate_wordmark.svg
+    - assets/ai/runway.svg
+    - assets/ai/sourcegraph.svg
+    - assets/ai/stability_ai.svg
+    - assets/ai/suno.svg
+    - assets/ai/suno_wordmark.svg
+    - assets/ai/together_ai.svg
+    - assets/ai/windsurf.svg
+    - assets/ai/x_ai.svg
