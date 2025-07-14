@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-Future<void> testSvgIcon({
+Future<void> testSvgLogo({
   required Widget svgWidget,
   required String goldenName,
   required double expectedWidth,

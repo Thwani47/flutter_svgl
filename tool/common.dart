@@ -1,7 +1,5 @@
 import 'dart:io';
 
-part 'generate_ai_logo_tests.dart';
-
 /// Converts 'my_logo_wordmark.svg' to 'myLogoWordmark'
 String fileNameToMethod(String fileName) {
   final name = fileName.replaceAll('.svg', '');
@@ -84,7 +82,7 @@ String generateTestMethod({
   
   return '''
   testWidgets('$className.$methodName matches golden', (WidgetTester tester) async {
-    await testSvgIcon(
+    await testSvgLogo(
       svgWidget: SVGL.$category.$methodName(width: 48, height: 60),
       goldenName: '$goldenName',
       expectedWidth: 48,
@@ -120,6 +118,7 @@ String generateLogoClass({
   buffer.writeln(generateLogoImports());
   buffer.writeln('class $className {');
   buffer.writeln('static const String _baseString = "packages/flutter_svgl/assets/$category/";');
+  buffer.writeln();
   
   for (var file in svgFiles) {
     final fileName = file.uri.pathSegments.last;

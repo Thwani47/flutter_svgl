@@ -12,7 +12,7 @@ This package is powered by the official [pheralb/svgl](https://github.com/pheral
 
 - [x] **Easy Integration** - No need to manage SVG assets manually—just import and use.
 
-- [x] **Scalable & Customizable** -Pass optional `width`, `height`, and `colorFilter` parameters to adjust icons dynamically.
+- [x] **Scalable & Customizable** -Pass optional `width`, `height`, and `colorFilter` parameters to adjust logo dynamically.
 
 ## 🚀 Getting Started
 

@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
-class AiLogos {
-static const String _baseString = "packages/flutter_svgl/assets/ai/";
 
+class AiIcons {
+static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// Returns the **gemini_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -22,6 +22,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **x_ai.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -41,6 +42,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **gemini.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -60,6 +62,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **claude.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -79,6 +82,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **grok_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -98,6 +102,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **inflection.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -117,6 +122,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **firebase_studio.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -136,6 +142,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **google_palm.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -155,6 +162,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **sourcegraph.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -174,6 +182,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **poper.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -193,6 +202,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **open_ai_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -212,6 +222,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **hume.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -231,6 +242,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **open_ai.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -250,6 +262,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **groq.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -269,6 +282,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **suno_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -288,6 +302,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **anthropic_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -307,6 +322,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **lovable.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -326,6 +342,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **basewell.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -345,6 +362,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **together_ai.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -364,6 +382,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **midday.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -383,6 +402,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **open_router.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -402,6 +422,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **mistral.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -421,6 +442,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **deepseek.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -440,6 +462,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **codium.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -459,6 +482,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **perplexity_ai.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -478,6 +502,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **qwen.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -497,6 +522,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **replicate_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -516,6 +542,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **mcp_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -535,6 +562,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **buildship.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -554,6 +582,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **deepseek_workdmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -573,6 +602,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **hugging_face.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -592,6 +622,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **windsurf.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -611,6 +642,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **grok.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -630,6 +662,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **mocha.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -649,6 +682,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **cody.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -668,6 +702,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **anthropic.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -687,6 +722,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **open_webui.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -706,6 +742,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **suno.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -725,6 +762,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **cohere_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -744,6 +782,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **runway.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -763,6 +802,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **ollama.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -782,6 +822,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **replicate.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -801,6 +842,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **claude_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -820,6 +862,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **cohere.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -839,6 +882,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **perplexity_ai_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -858,6 +902,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **locofy.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -877,6 +922,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **inflection_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -896,6 +942,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **stability_ai.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -915,6 +962,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **mcp.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -934,6 +982,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **groq_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -953,4 +1002,5 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
 }
