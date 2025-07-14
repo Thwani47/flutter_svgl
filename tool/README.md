@@ -55,7 +55,7 @@ The `common.dart` file provides:
 To add a new category:
 
 1. Create an `assets/{category}` directory with SVG files
-2. Run `dart tool/generate_all.dart` to generate both logos and tests
+2. Run `dart tool/generate_logos_and_tests.dart` to generate both logos and tests
 3. Update the main SVGL class to include the new category
 
 ## File Structure
