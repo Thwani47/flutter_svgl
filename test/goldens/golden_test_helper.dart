@@ -19,5 +19,8 @@ Future<void> testSvgLogo({
   expect(size.width, expectedWidth);
   expect(size.height, expectedHeight);
 
-  await expectLater(find.byType(SvgPicture), matchesGoldenFile('goldens/$goldenName'));
+  await expectLater(
+    find.byType(SvgPicture),
+    matchesGoldenFile('goldens/$goldenName'),
+  );
 }

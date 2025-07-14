@@ -7,18 +7,17 @@ void main(List<String> args) {
   const baseAssetPath = 'assets';
   const outputDir = 'lib/src';
   const testDir = 'test';
-  
-  final categories = Directory(baseAssetPath)
-      .listSync()
-      .whereType<Directory>()
-      .map((dir) => dir.path.split("/").last);
+
+  final categories = Directory(
+    baseAssetPath,
+  ).listSync().whereType<Directory>().map((dir) => dir.path.split("/").last);
 
   for (var category in categories) {
     print('Processing category: $category');
-    
+
     // Generate logos
     _generateLogos(category, baseAssetPath, outputDir);
-    
+
     // Generate tests
     _generateTests(category, testDir);
   }

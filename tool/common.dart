@@ -29,12 +29,13 @@ String toPascalCase(String input) {
 /// Gets all SVG files from a directory
 List<File> getSvgFiles(String directoryPath) {
   final dir = Directory(directoryPath);
-  
+
   if (!dir.existsSync()) {
     throw Exception('Directory $directoryPath does not exist');
   }
-  
-  return dir.listSync()
+
+  return dir
+      .listSync()
       .whereType<File>()
       .where((file) => file.path.endsWith('.svg'))
       .toList();
@@ -79,7 +80,7 @@ String generateTestMethod({
 }) {
   final testName = fileName.replaceAll('.svg', '');
   final goldenName = '${category}_$testName.png';
-  
+
   return '''
   testWidgets('$className.$methodName matches golden', (WidgetTester tester) async {
     await testSvgLogo(
@@ -114,26 +115,30 @@ String generateLogoClass({
   required List<File> svgFiles,
 }) {
   final buffer = StringBuffer();
-  
+
   buffer.writeln(generateLogoImports());
   buffer.writeln('class $className {');
-  buffer.writeln('static const String _baseString = "packages/flutter_svgl/assets/$category/";');
+  buffer.writeln(
+    'static const String _baseString = "packages/flutter_svgl/assets/$category/";',
+  );
   buffer.writeln();
-  
+
   for (var file in svgFiles) {
     final fileName = file.uri.pathSegments.last;
     final methodName = fileNameToMethod(fileName);
-    
-    buffer.write(generateWidgetMethod(
-      fileName: fileName,
-      methodName: methodName,
-      category: category,
-      basePackagePath: '\$_baseString',
-    ));
+
+    buffer.write(
+      generateWidgetMethod(
+        fileName: fileName,
+        methodName: methodName,
+        category: category,
+        basePackagePath: '\$_baseString',
+      ),
+    );
   }
-  
+
   buffer.writeln('}');
-  
+
   return buffer.toString();
 }
 
@@ -144,24 +149,26 @@ String generateTestFile({
   required List<File> svgFiles,
 }) {
   final buffer = StringBuffer();
-  
+
   buffer.writeln(generateTestImports());
   buffer.writeln();
   buffer.writeln('void main() {');
-  
+
   for (var file in svgFiles) {
     final fileName = file.uri.pathSegments.last;
     final methodName = fileNameToMethod(fileName);
-    
-    buffer.write(generateTestMethod(
-      fileName: fileName,
-      methodName: methodName,
-      category: category,
-      className: className,
-    ));
+
+    buffer.write(
+      generateTestMethod(
+        fileName: fileName,
+        methodName: methodName,
+        category: category,
+        className: className,
+      ),
+    );
   }
-  
+
   buffer.writeln('}');
-  
+
   return buffer.toString();
 }

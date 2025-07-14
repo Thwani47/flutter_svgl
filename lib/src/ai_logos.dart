@@ -1,7 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
+
 class AiLogos {
-static const String _baseString = "packages/flutter_svgl/assets/ai/";
+  static const String _baseString = "packages/flutter_svgl/assets/ai/";
 
   /// Returns the **gemini_wordmark.svg** SVG as a widget.
   ///
@@ -11,7 +12,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.geminiWordmark(width: 48, height: 48);
   /// ```
-  Widget geminiWordmark({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget geminiWordmark({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -22,6 +27,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **x_ai.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -30,7 +36,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.xAi(width: 48, height: 48);
   /// ```
-  Widget xAi({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget xAi({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -41,6 +51,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **gemini.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -49,7 +60,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.gemini(width: 48, height: 48);
   /// ```
-  Widget gemini({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget gemini({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -60,6 +75,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **claude.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -68,7 +84,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.claude(width: 48, height: 48);
   /// ```
-  Widget claude({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget claude({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -79,6 +99,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **grok_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -87,7 +108,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.grokWordmark(width: 48, height: 48);
   /// ```
-  Widget grokWordmark({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget grokWordmark({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -98,6 +123,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **inflection.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -106,7 +132,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.inflection(width: 48, height: 48);
   /// ```
-  Widget inflection({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget inflection({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -117,6 +147,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **firebase_studio.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -125,7 +156,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.firebaseStudio(width: 48, height: 48);
   /// ```
-  Widget firebaseStudio({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget firebaseStudio({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -136,6 +171,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **google_palm.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -144,7 +180,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.googlePalm(width: 48, height: 48);
   /// ```
-  Widget googlePalm({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget googlePalm({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -155,6 +195,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **sourcegraph.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -163,7 +204,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.sourcegraph(width: 48, height: 48);
   /// ```
-  Widget sourcegraph({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget sourcegraph({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -174,6 +219,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **poper.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -182,7 +228,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.poper(width: 48, height: 48);
   /// ```
-  Widget poper({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget poper({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -193,6 +243,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **open_ai_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -201,7 +252,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.openAiWordmark(width: 48, height: 48);
   /// ```
-  Widget openAiWordmark({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget openAiWordmark({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -212,6 +267,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **hume.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -220,7 +276,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.hume(width: 48, height: 48);
   /// ```
-  Widget hume({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget hume({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -231,6 +291,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **open_ai.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -239,7 +300,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.openAi(width: 48, height: 48);
   /// ```
-  Widget openAi({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget openAi({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -250,6 +315,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **groq.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -258,7 +324,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.groq(width: 48, height: 48);
   /// ```
-  Widget groq({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget groq({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -269,6 +339,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **suno_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -277,7 +348,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.sunoWordmark(width: 48, height: 48);
   /// ```
-  Widget sunoWordmark({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget sunoWordmark({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -288,6 +363,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **anthropic_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -296,7 +372,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.anthropicWordmark(width: 48, height: 48);
   /// ```
-  Widget anthropicWordmark({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget anthropicWordmark({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -307,6 +387,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **lovable.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -315,7 +396,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.lovable(width: 48, height: 48);
   /// ```
-  Widget lovable({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget lovable({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -326,6 +411,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **basewell.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -334,7 +420,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.basewell(width: 48, height: 48);
   /// ```
-  Widget basewell({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget basewell({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -345,6 +435,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **together_ai.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -353,7 +444,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.togetherAi(width: 48, height: 48);
   /// ```
-  Widget togetherAi({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget togetherAi({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -364,6 +459,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **midday.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -372,7 +468,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.midday(width: 48, height: 48);
   /// ```
-  Widget midday({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget midday({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -383,6 +483,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **open_router.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -391,7 +492,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.openRouter(width: 48, height: 48);
   /// ```
-  Widget openRouter({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget openRouter({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -402,6 +507,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **mistral.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -410,7 +516,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.mistral(width: 48, height: 48);
   /// ```
-  Widget mistral({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget mistral({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -421,6 +531,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **deepseek.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -429,7 +540,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.deepseek(width: 48, height: 48);
   /// ```
-  Widget deepseek({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget deepseek({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -440,6 +555,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **codium.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -448,7 +564,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.codium(width: 48, height: 48);
   /// ```
-  Widget codium({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget codium({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -459,6 +579,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **perplexity_ai.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -467,7 +588,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.perplexityAi(width: 48, height: 48);
   /// ```
-  Widget perplexityAi({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget perplexityAi({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -478,6 +603,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **qwen.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -486,7 +612,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.qwen(width: 48, height: 48);
   /// ```
-  Widget qwen({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget qwen({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -497,6 +627,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **replicate_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -505,7 +636,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.replicateWordmark(width: 48, height: 48);
   /// ```
-  Widget replicateWordmark({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget replicateWordmark({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -516,6 +651,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **mcp_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -524,7 +660,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.mcpWordmark(width: 48, height: 48);
   /// ```
-  Widget mcpWordmark({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget mcpWordmark({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -535,6 +675,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **buildship.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -543,7 +684,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.buildship(width: 48, height: 48);
   /// ```
-  Widget buildship({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget buildship({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -554,6 +699,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **deepseek_workdmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -562,7 +708,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.deepseekWorkdmark(width: 48, height: 48);
   /// ```
-  Widget deepseekWorkdmark({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget deepseekWorkdmark({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -573,6 +723,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **hugging_face.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -581,7 +732,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.huggingFace(width: 48, height: 48);
   /// ```
-  Widget huggingFace({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget huggingFace({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -592,6 +747,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **windsurf.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -600,7 +756,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.windsurf(width: 48, height: 48);
   /// ```
-  Widget windsurf({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget windsurf({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -611,6 +771,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **grok.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -619,7 +780,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.grok(width: 48, height: 48);
   /// ```
-  Widget grok({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget grok({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -630,6 +795,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **mocha.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -638,7 +804,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.mocha(width: 48, height: 48);
   /// ```
-  Widget mocha({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget mocha({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -649,6 +819,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **cody.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -657,7 +828,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.cody(width: 48, height: 48);
   /// ```
-  Widget cody({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget cody({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -668,6 +843,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **anthropic.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -676,7 +852,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.anthropic(width: 48, height: 48);
   /// ```
-  Widget anthropic({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget anthropic({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -687,6 +867,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **open_webui.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -695,7 +876,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.openWebui(width: 48, height: 48);
   /// ```
-  Widget openWebui({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget openWebui({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -706,6 +891,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **suno.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -714,7 +900,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.suno(width: 48, height: 48);
   /// ```
-  Widget suno({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget suno({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -725,6 +915,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **cohere_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -733,7 +924,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.cohereWordmark(width: 48, height: 48);
   /// ```
-  Widget cohereWordmark({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget cohereWordmark({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -744,6 +939,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **runway.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -752,7 +948,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.runway(width: 48, height: 48);
   /// ```
-  Widget runway({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget runway({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -763,6 +963,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **ollama.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -771,7 +972,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.ollama(width: 48, height: 48);
   /// ```
-  Widget ollama({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget ollama({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -782,6 +987,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **replicate.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -790,7 +996,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.replicate(width: 48, height: 48);
   /// ```
-  Widget replicate({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget replicate({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -801,6 +1011,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **claude_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -809,7 +1020,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.claudeWordmark(width: 48, height: 48);
   /// ```
-  Widget claudeWordmark({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget claudeWordmark({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -820,6 +1035,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **cohere.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -828,7 +1044,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.cohere(width: 48, height: 48);
   /// ```
-  Widget cohere({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget cohere({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -839,6 +1059,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **perplexity_ai_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -847,7 +1068,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.perplexityAiWordmark(width: 48, height: 48);
   /// ```
-  Widget perplexityAiWordmark({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget perplexityAiWordmark({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -858,6 +1083,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **locofy.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -866,7 +1092,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.locofy(width: 48, height: 48);
   /// ```
-  Widget locofy({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget locofy({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -877,6 +1107,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **inflection_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -885,7 +1116,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.inflectionWordmark(width: 48, height: 48);
   /// ```
-  Widget inflectionWordmark({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget inflectionWordmark({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -896,6 +1131,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **stability_ai.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -904,7 +1140,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.stabilityAi(width: 48, height: 48);
   /// ```
-  Widget stabilityAi({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget stabilityAi({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -915,6 +1155,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **mcp.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -923,7 +1164,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.mcp(width: 48, height: 48);
   /// ```
-  Widget mcp({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget mcp({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -934,6 +1179,7 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       ),
     );
   }
+
   /// Returns the **groq_wordmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -942,7 +1188,11 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
   /// ```dart
   /// SVGL.ai.groqWordmark(width: 48, height: 48);
   /// ```
-  Widget groqWordmark({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget groqWordmark({
+    double width = 24,
+    double height = 24,
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,

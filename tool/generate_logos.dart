@@ -7,10 +7,9 @@ void main() {
   const baseAssetPath = 'assets';
   const outputDir = 'lib/src';
 
-  final categories = Directory(baseAssetPath)
-      .listSync()
-      .whereType<Directory>()
-      .map((dir) => dir.path.split("/").last);
+  final categories = Directory(
+    baseAssetPath,
+  ).listSync().whereType<Directory>().map((dir) => dir.path.split("/").last);
 
   for (var category in categories) {
     _generateLogos(category, baseAssetPath, outputDir);

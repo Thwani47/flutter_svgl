@@ -4,7 +4,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'goldens/golden_test_helper.dart';
 
 void main() {
-  testWidgets('AiLogos.geminiWordmark matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.geminiWordmark matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.geminiWordmark(width: 48, height: 60),
       goldenName: 'ai_gemini_wordmark.png',
@@ -40,7 +42,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.grokWordmark matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.grokWordmark matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.grokWordmark(width: 48, height: 60),
       goldenName: 'ai_grok_wordmark.png',
@@ -58,7 +62,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.firebaseStudio matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.firebaseStudio matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.firebaseStudio(width: 48, height: 60),
       goldenName: 'ai_firebase_studio.png',
@@ -76,7 +82,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.sourcegraph matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.sourcegraph matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.sourcegraph(width: 48, height: 60),
       goldenName: 'ai_sourcegraph.png',
@@ -94,7 +102,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.openAiWordmark matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.openAiWordmark matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.openAiWordmark(width: 48, height: 60),
       goldenName: 'ai_open_ai_wordmark.png',
@@ -130,7 +140,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.sunoWordmark matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.sunoWordmark matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.sunoWordmark(width: 48, height: 60),
       goldenName: 'ai_suno_wordmark.png',
@@ -139,7 +151,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.anthropicWordmark matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.anthropicWordmark matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.anthropicWordmark(width: 48, height: 60),
       goldenName: 'ai_anthropic_wordmark.png',
@@ -220,7 +234,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.perplexityAi matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.perplexityAi matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.perplexityAi(width: 48, height: 60),
       goldenName: 'ai_perplexity_ai.png',
@@ -238,7 +254,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.replicateWordmark matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.replicateWordmark matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.replicateWordmark(width: 48, height: 60),
       goldenName: 'ai_replicate_wordmark.png',
@@ -247,7 +265,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.mcpWordmark matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.mcpWordmark matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.mcpWordmark(width: 48, height: 60),
       goldenName: 'ai_mcp_wordmark.png',
@@ -265,7 +285,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.deepseekWorkdmark matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.deepseekWorkdmark matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.deepseekWorkdmark(width: 48, height: 60),
       goldenName: 'ai_deepseek_workdmark.png',
@@ -274,7 +296,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.huggingFace matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.huggingFace matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.huggingFace(width: 48, height: 60),
       goldenName: 'ai_hugging_face.png',
@@ -346,7 +370,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.cohereWordmark matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.cohereWordmark matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.cohereWordmark(width: 48, height: 60),
       goldenName: 'ai_cohere_wordmark.png',
@@ -382,7 +408,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.claudeWordmark matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.claudeWordmark matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.claudeWordmark(width: 48, height: 60),
       goldenName: 'ai_claude_wordmark.png',
@@ -400,7 +428,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.perplexityAiWordmark matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.perplexityAiWordmark matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.perplexityAiWordmark(width: 48, height: 60),
       goldenName: 'ai_perplexity_ai_wordmark.png',
@@ -418,7 +448,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.inflectionWordmark matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.inflectionWordmark matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.inflectionWordmark(width: 48, height: 60),
       goldenName: 'ai_inflection_wordmark.png',
@@ -427,7 +459,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.stabilityAi matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.stabilityAi matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.stabilityAi(width: 48, height: 60),
       goldenName: 'ai_stability_ai.png',
@@ -445,7 +479,9 @@ void main() {
       tester: tester,
     );
   });
-  testWidgets('AiLogos.groqWordmark matches golden', (WidgetTester tester) async {
+  testWidgets('AiLogos.groqWordmark matches golden', (
+    WidgetTester tester,
+  ) async {
     await testSvgLogo(
       svgWidget: SVGL.ai.groqWordmark(width: 48, height: 60),
       goldenName: 'ai_groq_wordmark.png',
