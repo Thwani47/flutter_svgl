@@ -60,16 +60,8 @@ jobs:
     - name: Install dependencies
       run: flutter pub get
       
-    - name: Run golden tests
-      run: flutter test --update-goldens
-      
-    - name: Check for golden file changes
-      run: |
-        if [ -n "$(git status --porcelain test/goldens)" ]; then
-          echo "Golden files have changed. Please update them locally and commit the changes."
-          git status test/goldens
-          exit 1
-        fi
+    - name: Run tests
+      run: flutter test
 
   package-analysis:
     runs-on: ubuntu-latest
@@ -126,28 +118,3 @@ jobs:
           echo "Found vulnerable dependencies"
           exit 1
         fi
-
-  documentation:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      
-    - name: Setup Flutter
-      uses: subosito/flutter-action@v2
-      with:
-        flutter-version: '3.29.3'
-        channel: 'stable'
-        
-    - name: Install dependencies
-      run: flutter pub get
-      
-    - name: Generate documentation
-      run: dart doc
-      
-    - name: Upload documentation artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: documentation
-        path: doc/api/

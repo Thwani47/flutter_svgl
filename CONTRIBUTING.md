@@ -107,7 +107,6 @@ We maintain high code quality standards:
 - **Code formatting** - Use `dart format`
 - **Code analysis** - Must pass `flutter analyze`
 - **Test coverage** - Maintain good test coverage
-- **Documentation** - Document public APIs
 
 ### Pre-commit Hooks
 
