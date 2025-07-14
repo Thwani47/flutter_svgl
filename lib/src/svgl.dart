@@ -5,5 +5,5 @@ class SVGL {
   ///
   /// This includes logos for AI tools, platforms, and services.
   /// All icons are sourced from [svgl.app](https://svgl.app/directory/ai).
-  static AIIcons get ai => AIIcons();
+  static AiIcons get ai => AiIcons();
 }
