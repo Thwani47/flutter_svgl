@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text('Flutter SVGL Example')),
         body: Center(
-          child: SVGL.Figma(width: 100, height: 100, color: Colors.blue),
+          child: SVGL.ai.midday(width: 100, height: 100, color: Colors.blue),
         ),
       ),
     );

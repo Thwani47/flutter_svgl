@@ -32,7 +32,7 @@ class MyHomePage extends StatelessWidget {
 
         title: Text(title),
       ),
-      body: Center(child: SVGL.ai.midday(width: 60, height: 120)),
+      body: Center(child: SVGL.ai.midday(width: 60, height: 120, color: Colors.greenAccent)),
     );
   }
 }
