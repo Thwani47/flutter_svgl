@@ -1,7 +1,9 @@
 name: flutter_svgl
 description: Flutter SVGL is an open-source Flutter package that provides a collection of high-quality branded SVG logos as ready-to-use Flutter widgets.
 version: 0.0.1
-homepage: 
+homepage: https://github.com/Thwani47/flutter_svgl
+repository: https://github.com/Thwani47/flutter_svgl
+issue_tracker: https://github.com/Thwani47/flutter_svgl/issues
 
 environment:
   sdk: ^3.7.2
@@ -16,7 +18,10 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
-
+topics: 
+  - svg
+  - vector-graphics
+  
 flutter:
   assets:
     - assets/ai/anthropic.svg
