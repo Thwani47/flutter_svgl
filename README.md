@@ -57,9 +57,9 @@ The list of available logos is extensive. You can find the complete list on the 
 Example usage for popular brands:
 
 ```dart
-SVGL.Figma();
-SVGL.Google();
-SVGL.Facebook();
+SVGL.ai.midday();
+SVGL.ai.anthropic(); 
+SVGL.ai.basewell();
 ```
 
 🧑‍💻 Contributing
