@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  golden-tests:
+  test:
     runs-on: ubuntu-latest
     
     steps:
@@ -25,6 +25,12 @@ jobs:
       
     - name: Run tests
       run: flutter test
+      
+    - name: Run analysis
+      run: flutter analyze
+      
+    - name: Check formatting
+      run: dart format --set-exit-if-changed .
 
   package-analysis:
     runs-on: ubuntu-latest
@@ -81,3 +87,12 @@ jobs:
           echo "Found vulnerable dependencies"
           exit 1
         fi
+        
+    - name: Validate changelog format
+      run: |
+        # Check if changelog follows Keep a Changelog format
+        if ! grep -q "## \[Unreleased\]" CHANGELOG.md; then
+          echo "❌ Changelog missing [Unreleased] section"
+          exit 1
+        fi
+        echo "✅ Changelog format validated"
