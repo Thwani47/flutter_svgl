@@ -76,6 +76,30 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
     );
   }
 
+  /// Returns the **openrouter_dark.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.openrouterDark(width: 48, height: 48);
+  /// ```
+  Widget openrouterDark({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/openrouter_dark.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
   /// Returns the **claude.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -148,6 +172,102 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
     );
   }
 
+  /// Returns the **hume_ai.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.humeAi(width: 48, height: 48);
+  /// ```
+  Widget humeAi({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/hume_ai.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **mocha_light.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.mochaLight(width: 48, height: 48);
+  /// ```
+  Widget mochaLight({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/mocha_light.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **anthropic_dark.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.anthropicDark(width: 48, height: 48);
+  /// ```
+  Widget anthropicDark({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/anthropic_dark.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **replicate_dark.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.replicateDark(width: 48, height: 48);
+  /// ```
+  Widget replicateDark({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/replicate_dark.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
   /// Returns the **firebase_studio.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -196,6 +316,30 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
     );
   }
 
+  /// Returns the **ollama_dark.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.ollamaDark(width: 48, height: 48);
+  /// ```
+  Widget ollamaDark({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/ollama_dark.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
   /// Returns the **google_palm.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -214,6 +358,30 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       height: height,
       child: SvgPicture.asset(
         '$_baseString/google_palm.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **together_ai_light.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.togetherAiLight(width: 48, height: 48);
+  /// ```
+  Widget togetherAiLight({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/together_ai_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
@@ -262,6 +430,54 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       height: height,
       child: SvgPicture.asset(
         '$_baseString/poper.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **mistral_ai.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.mistralAi(width: 48, height: 48);
+  /// ```
+  Widget mistralAi({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/mistral_ai.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **replicate_light.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.replicateLight(width: 48, height: 48);
+  /// ```
+  Widget replicateLight({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/replicate_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
@@ -340,6 +556,78 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
     );
   }
 
+  /// Returns the **anthropic_light.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.anthropicLight(width: 48, height: 48);
+  /// ```
+  Widget anthropicLight({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/anthropic_light.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **model_context_protocol_dark.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.modelContextProtocolDark(width: 48, height: 48);
+  /// ```
+  Widget modelContextProtocolDark({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/model_context_protocol_dark.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **claude_ai.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.claudeAi(width: 48, height: 48);
+  /// ```
+  Widget claudeAi({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/claude_ai.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
   /// Returns the **groq.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -358,6 +646,30 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       height: height,
       child: SvgPicture.asset(
         '$_baseString/groq.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **openai_dark.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.openaiDark(width: 48, height: 48);
+  /// ```
+  Widget openaiDark({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/openai_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
@@ -406,6 +718,30 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       height: height,
       child: SvgPicture.asset(
         '$_baseString/anthropic_wordmark.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **xai_(grok)_light.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.xaiGrokLight(width: 48, height: 48);
+  /// ```
+  Widget xaiGrokLight({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/xai_(grok)_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
@@ -484,6 +820,30 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
     );
   }
 
+  /// Returns the **together_ai_dark.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.togetherAiDark(width: 48, height: 48);
+  /// ```
+  Widget togetherAiDark({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/together_ai_dark.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
   /// Returns the **midday.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -556,6 +916,30 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
     );
   }
 
+  /// Returns the **qwen_dark.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.qwenDark(width: 48, height: 48);
+  /// ```
+  Widget qwenDark({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/qwen_dark.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
   /// Returns the **deepseek.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -574,6 +958,102 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       height: height,
       child: SvgPicture.asset(
         '$_baseString/deepseek.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **openai_light.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.openaiLight(width: 48, height: 48);
+  /// ```
+  Widget openaiLight({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/openai_light.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **xai_(grok)_dark.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.xaiGrokDark(width: 48, height: 48);
+  /// ```
+  Widget xaiGrokDark({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/xai_(grok)_dark.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **inflection_ai_dark.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.inflectionAiDark(width: 48, height: 48);
+  /// ```
+  Widget inflectionAiDark({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/inflection_ai_dark.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **ollama_light.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.ollamaLight(width: 48, height: 48);
+  /// ```
+  Widget ollamaLight({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/ollama_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
@@ -724,6 +1204,54 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
     );
   }
 
+  /// Returns the **inflection_ai_light.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.inflectionAiLight(width: 48, height: 48);
+  /// ```
+  Widget inflectionAiLight({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/inflection_ai_light.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **openrouter_light.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.openrouterLight(width: 48, height: 48);
+  /// ```
+  Widget openrouterLight({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/openrouter_light.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
   /// Returns the **deepseek_workdmark.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -772,6 +1300,54 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
     );
   }
 
+  /// Returns the **model_context_protocol_light.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.modelContextProtocolLight(width: 48, height: 48);
+  /// ```
+  Widget modelContextProtocolLight({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/model_context_protocol_light.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **grok_light.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.grokLight(width: 48, height: 48);
+  /// ```
+  Widget grokLight({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/grok_light.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
   /// Returns the **windsurf.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -790,6 +1366,30 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       height: height,
       child: SvgPicture.asset(
         '$_baseString/windsurf.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **qwen_light.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.qwenLight(width: 48, height: 48);
+  /// ```
+  Widget qwenLight({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/qwen_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
@@ -988,6 +1588,30 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
     );
   }
 
+  /// Returns the **mocha_dark.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.mochaDark(width: 48, height: 48);
+  /// ```
+  Widget mochaDark({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/mocha_dark.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
   /// Returns the **ollama.svg** SVG as a widget.
   ///
   /// Supports [width], [height], and [colorFilter] for customization.
@@ -1150,6 +1774,30 @@ static const String _baseString = "packages/flutter_svgl/assets/ai/";
       height: height,
       child: SvgPicture.asset(
         '$_baseString/inflection_wordmark.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **grok_dark.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.grokDark(width: 48, height: 48);
+  /// ```
+  Widget grokDark({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/grok_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),

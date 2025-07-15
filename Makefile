@@ -14,7 +14,7 @@ install: ## Install dependencies
 
 generate: ## Generate code from assets
 	@echo "🔄 Generating code..."
-	@dart tool/generate_logos_and_tests.dart
+	@dart tool/generate_logos.dart
 
 analyze: ## Analyze code
 	@echo "🔍 Analyzing code..."
@@ -27,14 +27,6 @@ format: ## Format code
 format-check: ## Check code formatting
 	@echo "🎨 Checking code formatting..."
 	@dart format --output=none --set-exit-if-changed .
-
-test: ## Run tests
-	@echo "🧪 Running tests..."
-	@flutter test
-
-golden: ## Update golden files
-	@echo "🖼️ Updating golden files..."
-	@flutter test --update-goldens
 
 build: ## Build example app
 	@echo "🔨 Building example app..."
@@ -52,8 +44,4 @@ ci: install generate analyze format-check test ## Run CI checks
 release-check: dev build ## Check if ready for release
 	@echo "🚀 Release checks complete!"
 
-coverage: ## Generate test coverage
-	@echo "📊 Generating coverage..."
-	@flutter test --coverage
-	@genhtml coverage/lcov.info -o coverage/html
 

@@ -1,13 +1,61 @@
 import 'dart:io';
 
 /// Converts 'my_logo_wordmark.svg' to 'myLogoWordmark'
+/// Also handles special characters like dots, hashes, plus signs, etc.
 String fileNameToMethod(String fileName) {
   final name = fileName.replaceAll('.svg', '');
-  final parts = name.split(RegExp(r'[_\-]'));
+
+  // First, handle specific replacements for common programming terms
+  String processedName = name
+      .replaceAll('c#', 'csharp')
+      .replaceAll('c++', 'cplusplus')
+      .replaceAll('c-plus', 'cplusplus')
+      .replaceAll('.js', 'js')
+      .replaceAll('.dev', 'dev')
+      .replaceAll('.io', 'io')
+      .replaceAll('.com', 'com')
+      .replaceAll('.net', 'net')
+      .replaceAll('.org', 'org')
+      .replaceAll('@', 'at')
+      .replaceAll('+', 'plus')
+      .replaceAll('(', '')
+      .replaceAll(')', '')
+      .replaceAll('[', '')
+      .replaceAll(']', '')
+      .replaceAll('{', '')
+      .replaceAll('}', '')
+      .replaceAll('<', '')
+      .replaceAll('>', '')
+      .replaceAll('&', 'and')
+      .replaceAll('%', 'percent')
+      .replaceAll(r'$', 'dollar')
+      .replaceAll('!', 'exclamation')
+      .replaceAll('?', 'question')
+      .replaceAll('=', 'equals')
+      .replaceAll(':', 'colon')
+      .replaceAll(';', 'semicolon')
+      .replaceAll(',', 'comma')
+      .replaceAll('.', 'dot')
+      .replaceAll(' ', '_')
+      .replaceAll('/', 'slash')
+      .replaceAll('\\', 'backslash')
+      .replaceAll('|', 'pipe')
+      .replaceAll('~', 'tilde')
+      .replaceAll('`', 'backtick')
+      .replaceAll('"', 'quote')
+      .replaceAll("'", 'apostrophe')
+      .replaceAll('*', 'star')
+      .replaceAll('^', 'caret');
+
+  // Split by underscores and hyphens
+  final parts = processedName.split(RegExp(r'[_\-]'));
   final buffer = StringBuffer();
 
   for (var i = 0; i < parts.length; i++) {
     final part = parts[i];
+
+    // Skip empty parts
+    if (part.isEmpty) continue;
 
     if (i == 0) {
       buffer.write(part.toLowerCase());
@@ -16,7 +64,19 @@ String fileNameToMethod(String fileName) {
     }
   }
 
-  return buffer.toString();
+  String result = buffer.toString();
+
+  // Ensure the result starts with a letter (not a number)
+  if (result.isNotEmpty && RegExp(r'^[0-9]').hasMatch(result)) {
+    result = 'logo$result';
+  }
+
+  // If the result is empty or only contains invalid characters, use a default
+  if (result.isEmpty || !RegExp(r'^[a-zA-Z][a-zA-Z0-9]*$').hasMatch(result)) {
+    result = 'logo${DateTime.now().millisecondsSinceEpoch}';
+  }
+
+  return result;
 }
 
 String toPascalCase(String input) {
@@ -89,7 +149,7 @@ String generateTestMethod({
   return '''
   testWidgets('$className.$methodName matches golden', (WidgetTester tester) async {
     await testSvgLogo(
-      svgWidget: SVGL.$category.$methodName(width: 48, height: 60),
+      svgWidget: SVGL.${category.toLowerCase()}.$methodName(width: 48, height: 60),
       goldenName: '$goldenName',
       expectedWidth: 48,
       expectedHeight: 60,

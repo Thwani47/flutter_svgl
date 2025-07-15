@@ -59,9 +59,8 @@ BREAKING CHANGE: The LogoWidget constructor now requires a `size` parameter
 1. **Fork the repository**
 2. **Create a feature branch** from `master`
 3. **Make your changes** following the coding standards
-4. **Write tests** for your changes
-5. **Commit your changes** using conventional commits
-6. **Push to your fork** and submit a pull request
+4. **Commit your changes** using conventional commits
+5. **Push to your fork** and submit a pull request
 
 ## Automated Changelog
 

@@ -48,24 +48,23 @@ Thank you for your interest in contributing to Flutter SVGL! This document provi
 
 #### Adding New SVG Logos
 
-1. **Add SVG files** to the appropriate category directory (e.g., `assets/ai/`)
-2. **Generate code** from the new assets:
+##### Run the script to add new SVG logos
 
-   ```bash
-   make generate
-   ```
+```bash
+dart tool/fetch_svg_data.dart
+```
 
-3. **Update golden files** if needed:
+##### Generate code\*\* from the new assets
 
-   ```bash
-   make golden
-   ```
+```bash
+make generate
+```
 
-4. **Run tests** to ensure everything works:
+##### Update golden files\*\* if needed
 
-   ```bash
-   make test
-   ```
+```bash
+make golden
+```
 
 #### Modifying Existing Code
 
@@ -82,33 +81,15 @@ Thank you for your interest in contributing to Flutter SVGL! This document provi
    make analyze
    ```
 
-4. **Run tests**:
-
-   ```bash
-   make test
-   ```
-
 ### Code Generation
 
 This project uses code generation extensively. The tools are located in `tool/`:
 
-- **Never manually edit generated files** in `lib/src/` or `test/`
+- **Never manually edit generated files** in `lib/src/`
 - **Always run code generation** after adding/removing SVG files
 - **Commit generated files** along with your changes
 
 ### Testing
-
-We use several types of tests:
-
-1. **Golden tests** - Visual regression tests for SVG rendering
-
-**Running tests:**
-
-```bash
-make test           # Run all tests
-make golden         # Update golden files
-make coverage       # Generate coverage report
-```
 
 ### Code Quality
 
@@ -116,7 +97,6 @@ We maintain high code quality standards:
 
 - **Code formatting** - Use `dart format`
 - **Code analysis** - Must pass `flutter analyze`
-- **Test coverage** - Maintain good test coverage
 
 ### Pre-commit Hooks
 

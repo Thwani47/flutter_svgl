@@ -3,7 +3,7 @@
 import 'dart:io';
 import 'common.dart';
 
-void main() {
+void main(List<String> args) {
   const baseAssetPath = 'assets';
   const outputDir = 'lib/src';
 
@@ -12,6 +12,9 @@ void main() {
   ).listSync().whereType<Directory>().map((dir) => dir.path.split("/").last);
 
   for (var category in categories) {
+    print('Processing category: $category');
+
+    // Generate logos
     _generateLogos(category, baseAssetPath, outputDir);
   }
 }
@@ -28,12 +31,12 @@ void _generateLogos(String category, String baseAssetPath, String outputDir) {
       svgFiles: svgFiles,
     );
 
-    final outFile = File('$outputDir/${category}_logos.dart');
+    final outFile = File('$outputDir/${category.toLowerCase()}_logos.dart');
     outFile.createSync(recursive: true);
     outFile.writeAsStringSync(output);
 
-    print('Generated ${outFile.path} with ${svgFiles.length} logos');
+    print('  ✓ Generated ${outFile.path} with ${svgFiles.length} logos');
   } catch (e) {
-    print('Error generating logos for $category: $e');
+    print('  ✗ Error generating logos for $category: $e');
   }
 }
