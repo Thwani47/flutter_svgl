@@ -14,19 +14,18 @@ Thank you for your interest in contributing to Flutter SVGL! This document provi
 
 1. **Fork the repository** on GitHub
 2. **Clone your fork**:
+
    ```bash
    git clone https://github.com/Thwani47/flutter_svgl.git
    cd flutter_svgl
    ```
+
 3. **Install dependencies**:
+
    ```bash
    make install
    # or
    flutter pub get
-   ```
-4. **Run the development check**:
-   ```bash
-   make dev
    ```
 
 ## 📝 Development Workflow
@@ -40,6 +39,7 @@ Thank you for your interest in contributing to Flutter SVGL! This document provi
    ```
 
 2. **Ensure everything works**:
+
    ```bash
    make dev
    ```
@@ -50,14 +50,19 @@ Thank you for your interest in contributing to Flutter SVGL! This document provi
 
 1. **Add SVG files** to the appropriate category directory (e.g., `assets/ai/`)
 2. **Generate code** from the new assets:
+
    ```bash
    make generate
    ```
+
 3. **Update golden files** if needed:
+
    ```bash
    make golden
    ```
+
 4. **Run tests** to ensure everything works:
+
    ```bash
    make test
    ```
@@ -66,14 +71,19 @@ Thank you for your interest in contributing to Flutter SVGL! This document provi
 
 1. **Make your changes** to the source code
 2. **Format the code**:
+
    ```bash
    make format
    ```
+
 3. **Analyze the code**:
+
    ```bash
    make analyze
    ```
+
 4. **Run tests**:
+
    ```bash
    make test
    ```
@@ -140,7 +150,7 @@ Before creating a new issue:
 
 Use conventional commit format:
 
-```
+```bash
 type(scope): description
 
 [optional body]
@@ -160,7 +170,7 @@ type(scope): description
 
 **Examples:**
 
-```
+```bash
 feat(ai): add OpenAI logo
 fix(rendering): correct aspect ratio handling
 docs(readme): update installation instructions
@@ -202,15 +212,19 @@ make coverage       # Generate test coverage
 1. **Update version** in `pubspec.yaml`
 2. **Update CHANGELOG.md**
 3. **Run release check**:
-   ```bash
+
+```bash
    make release-check
-   ```
-4. **Create tag**:
+```
+
+1. **Create tag**:
+
    ```bash
    git tag v0.1.0
    git push origin v0.1.0
    ```
-5. **GitHub Actions** will automatically publish to pub.dev
+
+2. **GitHub Actions** will automatically publish to pub.dev
 
 ## 🏗️ CI/CD
 

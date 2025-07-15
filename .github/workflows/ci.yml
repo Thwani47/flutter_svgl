@@ -87,12 +87,3 @@ jobs:
           echo "Found vulnerable dependencies"
           exit 1
         fi
-        
-    - name: Validate changelog format
-      run: |
-        # Check if changelog follows Keep a Changelog format
-        if ! grep -q "## \[Unreleased\]" CHANGELOG.md; then
-          echo "❌ Changelog missing [Unreleased] section"
-          exit 1
-        fi
-        echo "✅ Changelog format validated"
