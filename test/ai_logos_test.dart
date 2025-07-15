@@ -1,7 +1,7 @@
 import 'package:flutter_svgl/src/svgl.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'goldens/golden_test_helper.dart';
+import 'helpers/golden_test_helper.dart';
 
 void main() {
   testWidgets('AiLogos.geminiWordmark matches golden', (

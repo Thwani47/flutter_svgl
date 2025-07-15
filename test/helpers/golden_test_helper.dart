@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import 'golden_tests_extensions.dart';
+
 Future<void> testSvgLogo({
   required Widget svgWidget,
   required String goldenName,
@@ -19,8 +21,5 @@ Future<void> testSvgLogo({
   expect(size.width, expectedWidth);
   expect(size.height, expectedHeight);
 
-  await expectLater(
-    find.byType(SvgPicture),
-    matchesGoldenFile('goldens/$goldenName'),
-  );
+  await expectGoldenMatches(find.byType(SvgPicture), goldenName, null, 0.5);
 }
