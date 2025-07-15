@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 
 class AiLogos {
-  static const String _baseString = "packages/flutter_svgl/assets/ai/";
+static const String _baseString = "packages/flutter_svgl/assets/ai/";
 
   /// Returns the **gemini_wordmark.svg** SVG as a widget.
   ///
@@ -13,8 +13,8 @@ class AiLogos {
   /// SVGL.ai.geminiWordmark(width: 48, height: 48);
   /// ```
   Widget geminiWordmark({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -37,8 +37,8 @@ class AiLogos {
   /// SVGL.ai.xAi(width: 48, height: 48);
   /// ```
   Widget xAi({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -61,8 +61,8 @@ class AiLogos {
   /// SVGL.ai.gemini(width: 48, height: 48);
   /// ```
   Widget gemini({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -85,8 +85,8 @@ class AiLogos {
   /// SVGL.ai.claude(width: 48, height: 48);
   /// ```
   Widget claude({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -109,8 +109,8 @@ class AiLogos {
   /// SVGL.ai.grokWordmark(width: 48, height: 48);
   /// ```
   Widget grokWordmark({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -133,8 +133,8 @@ class AiLogos {
   /// SVGL.ai.inflection(width: 48, height: 48);
   /// ```
   Widget inflection({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -157,8 +157,8 @@ class AiLogos {
   /// SVGL.ai.firebaseStudio(width: 48, height: 48);
   /// ```
   Widget firebaseStudio({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -166,6 +166,30 @@ class AiLogos {
       height: height,
       child: SvgPicture.asset(
         '$_baseString/firebase_studio.svg',
+        fit: BoxFit.fill,
+        colorFilter: colorFilter,
+      ),
+    );
+  }
+
+  /// Returns the **amazon_q.svg** SVG as a widget.
+  ///
+  /// Supports [width], [height], and [colorFilter] for customization.
+  ///
+  /// Example:
+  /// ```dart
+  /// SVGL.ai.amazonQ(width: 48, height: 48);
+  /// ```
+  Widget amazonQ({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
+    return SizedBox(
+      width: width,
+      height: height,
+      child: SvgPicture.asset(
+        '$_baseString/amazon_q.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
@@ -181,8 +205,8 @@ class AiLogos {
   /// SVGL.ai.googlePalm(width: 48, height: 48);
   /// ```
   Widget googlePalm({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -205,8 +229,8 @@ class AiLogos {
   /// SVGL.ai.sourcegraph(width: 48, height: 48);
   /// ```
   Widget sourcegraph({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -229,8 +253,8 @@ class AiLogos {
   /// SVGL.ai.poper(width: 48, height: 48);
   /// ```
   Widget poper({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -253,8 +277,8 @@ class AiLogos {
   /// SVGL.ai.openAiWordmark(width: 48, height: 48);
   /// ```
   Widget openAiWordmark({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -277,8 +301,8 @@ class AiLogos {
   /// SVGL.ai.hume(width: 48, height: 48);
   /// ```
   Widget hume({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -301,8 +325,8 @@ class AiLogos {
   /// SVGL.ai.openAi(width: 48, height: 48);
   /// ```
   Widget openAi({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -325,8 +349,8 @@ class AiLogos {
   /// SVGL.ai.groq(width: 48, height: 48);
   /// ```
   Widget groq({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -349,8 +373,8 @@ class AiLogos {
   /// SVGL.ai.sunoWordmark(width: 48, height: 48);
   /// ```
   Widget sunoWordmark({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -373,8 +397,8 @@ class AiLogos {
   /// SVGL.ai.anthropicWordmark(width: 48, height: 48);
   /// ```
   Widget anthropicWordmark({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -397,8 +421,8 @@ class AiLogos {
   /// SVGL.ai.lovable(width: 48, height: 48);
   /// ```
   Widget lovable({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -421,8 +445,8 @@ class AiLogos {
   /// SVGL.ai.basewell(width: 48, height: 48);
   /// ```
   Widget basewell({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -445,8 +469,8 @@ class AiLogos {
   /// SVGL.ai.togetherAi(width: 48, height: 48);
   /// ```
   Widget togetherAi({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -469,8 +493,8 @@ class AiLogos {
   /// SVGL.ai.midday(width: 48, height: 48);
   /// ```
   Widget midday({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -493,8 +517,8 @@ class AiLogos {
   /// SVGL.ai.openRouter(width: 48, height: 48);
   /// ```
   Widget openRouter({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -517,8 +541,8 @@ class AiLogos {
   /// SVGL.ai.mistral(width: 48, height: 48);
   /// ```
   Widget mistral({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -541,8 +565,8 @@ class AiLogos {
   /// SVGL.ai.deepseek(width: 48, height: 48);
   /// ```
   Widget deepseek({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -565,8 +589,8 @@ class AiLogos {
   /// SVGL.ai.codium(width: 48, height: 48);
   /// ```
   Widget codium({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -589,8 +613,8 @@ class AiLogos {
   /// SVGL.ai.perplexityAi(width: 48, height: 48);
   /// ```
   Widget perplexityAi({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -613,8 +637,8 @@ class AiLogos {
   /// SVGL.ai.qwen(width: 48, height: 48);
   /// ```
   Widget qwen({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -637,8 +661,8 @@ class AiLogos {
   /// SVGL.ai.replicateWordmark(width: 48, height: 48);
   /// ```
   Widget replicateWordmark({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -661,8 +685,8 @@ class AiLogos {
   /// SVGL.ai.mcpWordmark(width: 48, height: 48);
   /// ```
   Widget mcpWordmark({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -685,8 +709,8 @@ class AiLogos {
   /// SVGL.ai.buildship(width: 48, height: 48);
   /// ```
   Widget buildship({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -709,8 +733,8 @@ class AiLogos {
   /// SVGL.ai.deepseekWorkdmark(width: 48, height: 48);
   /// ```
   Widget deepseekWorkdmark({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -733,8 +757,8 @@ class AiLogos {
   /// SVGL.ai.huggingFace(width: 48, height: 48);
   /// ```
   Widget huggingFace({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -757,8 +781,8 @@ class AiLogos {
   /// SVGL.ai.windsurf(width: 48, height: 48);
   /// ```
   Widget windsurf({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -781,8 +805,8 @@ class AiLogos {
   /// SVGL.ai.grok(width: 48, height: 48);
   /// ```
   Widget grok({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -805,8 +829,8 @@ class AiLogos {
   /// SVGL.ai.mocha(width: 48, height: 48);
   /// ```
   Widget mocha({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -829,8 +853,8 @@ class AiLogos {
   /// SVGL.ai.cody(width: 48, height: 48);
   /// ```
   Widget cody({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -853,8 +877,8 @@ class AiLogos {
   /// SVGL.ai.anthropic(width: 48, height: 48);
   /// ```
   Widget anthropic({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -877,8 +901,8 @@ class AiLogos {
   /// SVGL.ai.openWebui(width: 48, height: 48);
   /// ```
   Widget openWebui({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -901,8 +925,8 @@ class AiLogos {
   /// SVGL.ai.suno(width: 48, height: 48);
   /// ```
   Widget suno({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -925,8 +949,8 @@ class AiLogos {
   /// SVGL.ai.cohereWordmark(width: 48, height: 48);
   /// ```
   Widget cohereWordmark({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -949,8 +973,8 @@ class AiLogos {
   /// SVGL.ai.runway(width: 48, height: 48);
   /// ```
   Widget runway({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -973,8 +997,8 @@ class AiLogos {
   /// SVGL.ai.ollama(width: 48, height: 48);
   /// ```
   Widget ollama({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -997,8 +1021,8 @@ class AiLogos {
   /// SVGL.ai.replicate(width: 48, height: 48);
   /// ```
   Widget replicate({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -1021,8 +1045,8 @@ class AiLogos {
   /// SVGL.ai.claudeWordmark(width: 48, height: 48);
   /// ```
   Widget claudeWordmark({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -1045,8 +1069,8 @@ class AiLogos {
   /// SVGL.ai.cohere(width: 48, height: 48);
   /// ```
   Widget cohere({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -1069,8 +1093,8 @@ class AiLogos {
   /// SVGL.ai.perplexityAiWordmark(width: 48, height: 48);
   /// ```
   Widget perplexityAiWordmark({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -1093,8 +1117,8 @@ class AiLogos {
   /// SVGL.ai.locofy(width: 48, height: 48);
   /// ```
   Widget locofy({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -1117,8 +1141,8 @@ class AiLogos {
   /// SVGL.ai.inflectionWordmark(width: 48, height: 48);
   /// ```
   Widget inflectionWordmark({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -1141,8 +1165,8 @@ class AiLogos {
   /// SVGL.ai.stabilityAi(width: 48, height: 48);
   /// ```
   Widget stabilityAi({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -1165,8 +1189,8 @@ class AiLogos {
   /// SVGL.ai.mcp(width: 48, height: 48);
   /// ```
   Widget mcp({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -1189,8 +1213,8 @@ class AiLogos {
   /// SVGL.ai.groqWordmark(width: 48, height: 48);
   /// ```
   Widget groqWordmark({
-    double width = 24,
-    double height = 24,
+    double width = 24, 
+    double height = 24, 
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
@@ -1203,4 +1227,6 @@ class AiLogos {
       ),
     );
   }
+
+
 }

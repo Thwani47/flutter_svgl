@@ -57,7 +57,11 @@ String generateWidgetMethod({
   /// ```dart
   /// SVGL.$category.$methodName(width: 48, height: 48);
   /// ```
-  Widget $methodName({double width = 24, double height = 24, ColorFilter? colorFilter}) {
+  Widget $methodName({
+    double width = 24, 
+    double height = 24, 
+    ColorFilter? colorFilter,
+  }) {
     return SizedBox(
       width: width,
       height: height,
@@ -68,6 +72,7 @@ String generateWidgetMethod({
       ),
     );
   }
+
 ''';
 }
 
@@ -90,7 +95,8 @@ String generateTestMethod({
       expectedHeight: 60,
       tester: tester,
     );
-  });
+  }, tags: ['golden']);
+
 ''';
 }
 
@@ -105,7 +111,7 @@ String generateTestImports() {
   return '''import 'package:flutter_svgl/src/svgl.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'goldens/golden_test_helper.dart';''';
+import 'helpers/golden_test_helper.dart';''';
 }
 
 /// Generates a complete logo class
@@ -117,6 +123,7 @@ String generateLogoClass({
   final buffer = StringBuffer();
 
   buffer.writeln(generateLogoImports());
+  buffer.writeln();
   buffer.writeln('class $className {');
   buffer.writeln(
     'static const String _baseString = "packages/flutter_svgl/assets/$category/";',
@@ -136,6 +143,8 @@ String generateLogoClass({
       ),
     );
   }
+
+  buffer.writeln();
 
   buffer.writeln('}');
 
