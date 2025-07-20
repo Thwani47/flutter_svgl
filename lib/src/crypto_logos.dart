@@ -2,7 +2,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 
 class CryptoLogos {
-static const String _baseString = "packages/flutter_svgl/assets/crypto/";
+  static const String _baseString =
+      "https://raw.githubusercontent.com/Thwani47/flutter_svgl/refs/heads/master/assets/crypto/";
 
   /// Returns the **tether.svg** SVG as a widget.
   ///
@@ -13,14 +14,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.tether(width: 48, height: 48);
   /// ```
   Widget tether({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/tether.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -37,14 +38,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.polygon(width: 48, height: 48);
   /// ```
   Widget polygon({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/polygon.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -61,14 +62,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.leapWallet(width: 48, height: 48);
   /// ```
   Widget leapWallet({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/leap_wallet.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -85,14 +86,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.ethereum(width: 48, height: 48);
   /// ```
   Widget ethereum({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/ethereum.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -109,14 +110,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.dogecoin(width: 48, height: 48);
   /// ```
   Widget dogecoin({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/dogecoin.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -133,14 +134,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.binance(width: 48, height: 48);
   /// ```
   Widget binance({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/binance.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -157,14 +158,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.ton(width: 48, height: 48);
   /// ```
   Widget ton({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/ton.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -181,14 +182,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.algorand(width: 48, height: 48);
   /// ```
   Widget algorand({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/algorand.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -205,14 +206,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.tron(width: 48, height: 48);
   /// ```
   Widget tron({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/tron.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -229,14 +230,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.link(width: 48, height: 48);
   /// ```
   Widget link({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/link.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -253,14 +254,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.metamask(width: 48, height: 48);
   /// ```
   Widget metamask({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/metamask.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -277,14 +278,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.bnb(width: 48, height: 48);
   /// ```
   Widget bnb({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/bnb.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -301,14 +302,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.bitcoin(width: 48, height: 48);
   /// ```
   Widget bitcoin({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/bitcoin.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -325,14 +326,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.litecoin(width: 48, height: 48);
   /// ```
   Widget litecoin({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/litecoin.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -349,14 +350,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.xrp(width: 48, height: 48);
   /// ```
   Widget xrp({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/xrp.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -373,14 +374,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.monero(width: 48, height: 48);
   /// ```
   Widget monero({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/monero.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -397,14 +398,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.coinbase(width: 48, height: 48);
   /// ```
   Widget coinbase({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/coinbase.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -421,14 +422,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.trustWallet(width: 48, height: 48);
   /// ```
   Widget trustWallet({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/trust_wallet.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -445,14 +446,14 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.solana(width: 48, height: 48);
   /// ```
   Widget solana({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/solana.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -469,20 +470,18 @@ static const String _baseString = "packages/flutter_svgl/assets/crypto/";
   /// SVGL.crypto.opensea(width: 48, height: 48);
   /// ```
   Widget opensea({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/opensea.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
     );
   }
-
-
 }

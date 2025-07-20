@@ -2,7 +2,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 
 class CmsLogos {
-static const String _baseString = "packages/flutter_svgl/assets/cms/";
+  static const String _baseString =
+      "https://raw.githubusercontent.com/Thwani47/flutter_svgl/refs/heads/master/assets/cms/";
 
   /// Returns the **rowy.svg** SVG as a widget.
   ///
@@ -13,14 +14,14 @@ static const String _baseString = "packages/flutter_svgl/assets/cms/";
   /// SVGL.cms.rowy(width: 48, height: 48);
   /// ```
   Widget rowy({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/rowy.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -37,14 +38,14 @@ static const String _baseString = "packages/flutter_svgl/assets/cms/";
   /// SVGL.cms.builder(width: 48, height: 48);
   /// ```
   Widget builder({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/builder.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -61,14 +62,14 @@ static const String _baseString = "packages/flutter_svgl/assets/cms/";
   /// SVGL.cms.payloadCmsLight(width: 48, height: 48);
   /// ```
   Widget payloadCmsLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/payload_cms_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -85,14 +86,14 @@ static const String _baseString = "packages/flutter_svgl/assets/cms/";
   /// SVGL.cms.directus(width: 48, height: 48);
   /// ```
   Widget directus({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/directus.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -109,14 +110,14 @@ static const String _baseString = "packages/flutter_svgl/assets/cms/";
   /// SVGL.cms.shopify(width: 48, height: 48);
   /// ```
   Widget shopify({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/shopify.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -133,14 +134,14 @@ static const String _baseString = "packages/flutter_svgl/assets/cms/";
   /// SVGL.cms.webflow(width: 48, height: 48);
   /// ```
   Widget webflow({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/webflow.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -157,14 +158,14 @@ static const String _baseString = "packages/flutter_svgl/assets/cms/";
   /// SVGL.cms.payloadCmsDark(width: 48, height: 48);
   /// ```
   Widget payloadCmsDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/payload_cms_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -181,14 +182,14 @@ static const String _baseString = "packages/flutter_svgl/assets/cms/";
   /// SVGL.cms.sanity(width: 48, height: 48);
   /// ```
   Widget sanity({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/sanity.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -205,14 +206,14 @@ static const String _baseString = "packages/flutter_svgl/assets/cms/";
   /// SVGL.cms.storyblok(width: 48, height: 48);
   /// ```
   Widget storyblok({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/storyblok.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -229,14 +230,14 @@ static const String _baseString = "packages/flutter_svgl/assets/cms/";
   /// SVGL.cms.strapi(width: 48, height: 48);
   /// ```
   Widget strapi({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/strapi.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -253,20 +254,18 @@ static const String _baseString = "packages/flutter_svgl/assets/cms/";
   /// SVGL.cms.tina(width: 48, height: 48);
   /// ```
   Widget tina({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/tina.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
     );
   }
-
-
 }

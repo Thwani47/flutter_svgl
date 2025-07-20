@@ -2,7 +2,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 
 class CommunityLogos {
-static const String _baseString = "packages/flutter_svgl/assets/community/";
+  static const String _baseString =
+      "https://raw.githubusercontent.com/Thwani47/flutter_svgl/refs/heads/master/assets/community/";
 
   /// Returns the **uxcorprangel_light.svg** SVG as a widget.
   ///
@@ -13,14 +14,14 @@ static const String _baseString = "packages/flutter_svgl/assets/community/";
   /// SVGL.community.uxcorprangelLight(width: 48, height: 48);
   /// ```
   Widget uxcorprangelLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/uxcorprangel_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -37,14 +38,14 @@ static const String _baseString = "packages/flutter_svgl/assets/community/";
   /// SVGL.community.manzdev(width: 48, height: 48);
   /// ```
   Widget manzdev({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/manzdev.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -61,14 +62,14 @@ static const String _baseString = "packages/flutter_svgl/assets/community/";
   /// SVGL.community.uxcorprangelDark(width: 48, height: 48);
   /// ```
   Widget uxcorprangelDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/uxcorprangel_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -85,14 +86,14 @@ static const String _baseString = "packages/flutter_svgl/assets/community/";
   /// SVGL.community.afordinDark(width: 48, height: 48);
   /// ```
   Widget afordinDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/afordin_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -109,14 +110,14 @@ static const String _baseString = "packages/flutter_svgl/assets/community/";
   /// SVGL.community.midudev(width: 48, height: 48);
   /// ```
   Widget midudev({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/midudev.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -133,14 +134,14 @@ static const String _baseString = "packages/flutter_svgl/assets/community/";
   /// SVGL.community.uxanarangelDark(width: 48, height: 48);
   /// ```
   Widget uxanarangelDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/uxanarangel_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -157,14 +158,14 @@ static const String _baseString = "packages/flutter_svgl/assets/community/";
   /// SVGL.community.uxanarangelLight(width: 48, height: 48);
   /// ```
   Widget uxanarangelLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/uxanarangel_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -181,14 +182,14 @@ static const String _baseString = "packages/flutter_svgl/assets/community/";
   /// SVGL.community.afordinLight(width: 48, height: 48);
   /// ```
   Widget afordinLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/afordin_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -205,14 +206,14 @@ static const String _baseString = "packages/flutter_svgl/assets/community/";
   /// SVGL.community.devtoDark(width: 48, height: 48);
   /// ```
   Widget devtoDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/devto_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -229,14 +230,14 @@ static const String _baseString = "packages/flutter_svgl/assets/community/";
   /// SVGL.community.devtoLight(width: 48, height: 48);
   /// ```
   Widget devtoLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/devto_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -253,20 +254,18 @@ static const String _baseString = "packages/flutter_svgl/assets/community/";
   /// SVGL.community.developerStudentClub(width: 48, height: 48);
   /// ```
   Widget developerStudentClub({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/developer_student_club.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
     );
   }
-
-
 }

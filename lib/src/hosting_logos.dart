@@ -2,7 +2,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 
 class HostingLogos {
-static const String _baseString = "packages/flutter_svgl/assets/hosting/";
+  static const String _baseString =
+      "https://raw.githubusercontent.com/Thwani47/flutter_svgl/refs/heads/master/assets/hosting/";
 
   /// Returns the **dropbox.svg** SVG as a widget.
   ///
@@ -13,14 +14,14 @@ static const String _baseString = "packages/flutter_svgl/assets/hosting/";
   /// SVGL.hosting.dropbox(width: 48, height: 48);
   /// ```
   Widget dropbox({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/dropbox.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -37,14 +38,14 @@ static const String _baseString = "packages/flutter_svgl/assets/hosting/";
   /// SVGL.hosting.nhost(width: 48, height: 48);
   /// ```
   Widget nhost({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/nhost.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -61,14 +62,14 @@ static const String _baseString = "packages/flutter_svgl/assets/hosting/";
   /// SVGL.hosting.firebase(width: 48, height: 48);
   /// ```
   Widget firebase({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/firebase.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -85,14 +86,14 @@ static const String _baseString = "packages/flutter_svgl/assets/hosting/";
   /// SVGL.hosting.netlify(width: 48, height: 48);
   /// ```
   Widget netlify({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/netlify.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -109,14 +110,14 @@ static const String _baseString = "packages/flutter_svgl/assets/hosting/";
   /// SVGL.hosting.vercelDark(width: 48, height: 48);
   /// ```
   Widget vercelDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/vercel_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -133,14 +134,14 @@ static const String _baseString = "packages/flutter_svgl/assets/hosting/";
   /// SVGL.hosting.fly(width: 48, height: 48);
   /// ```
   Widget fly({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/fly.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -157,14 +158,14 @@ static const String _baseString = "packages/flutter_svgl/assets/hosting/";
   /// SVGL.hosting.hostgator(width: 48, height: 48);
   /// ```
   Widget hostgator({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/hostgator.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -181,14 +182,14 @@ static const String _baseString = "packages/flutter_svgl/assets/hosting/";
   /// SVGL.hosting.vercelLight(width: 48, height: 48);
   /// ```
   Widget vercelLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/vercel_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -205,14 +206,14 @@ static const String _baseString = "packages/flutter_svgl/assets/hosting/";
   /// SVGL.hosting.godaddyDark(width: 48, height: 48);
   /// ```
   Widget godaddyDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/godaddy_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -229,14 +230,14 @@ static const String _baseString = "packages/flutter_svgl/assets/hosting/";
   /// SVGL.hosting.godaddyLight(width: 48, height: 48);
   /// ```
   Widget godaddyLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/godaddy_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -253,14 +254,14 @@ static const String _baseString = "packages/flutter_svgl/assets/hosting/";
   /// SVGL.hosting.zeaburDark(width: 48, height: 48);
   /// ```
   Widget zeaburDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/zeabur_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -277,20 +278,18 @@ static const String _baseString = "packages/flutter_svgl/assets/hosting/";
   /// SVGL.hosting.zeaburLight(width: 48, height: 48);
   /// ```
   Widget zeaburLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/zeabur_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
     );
   }
-
-
 }

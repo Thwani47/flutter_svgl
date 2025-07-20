@@ -2,7 +2,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 
 class EducationLogos {
-static const String _baseString = "packages/flutter_svgl/assets/education/";
+  static const String _baseString =
+      "https://raw.githubusercontent.com/Thwani47/flutter_svgl/refs/heads/master/assets/education/";
 
   /// Returns the **udacity.svg** SVG as a widget.
   ///
@@ -13,14 +14,14 @@ static const String _baseString = "packages/flutter_svgl/assets/education/";
   /// SVGL.education.udacity(width: 48, height: 48);
   /// ```
   Widget udacity({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/udacity.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -37,14 +38,14 @@ static const String _baseString = "packages/flutter_svgl/assets/education/";
   /// SVGL.education.openbootcamp(width: 48, height: 48);
   /// ```
   Widget openbootcamp({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/openbootcamp.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -61,14 +62,14 @@ static const String _baseString = "packages/flutter_svgl/assets/education/";
   /// SVGL.education.udemyLight(width: 48, height: 48);
   /// ```
   Widget udemyLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/udemy_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -85,14 +86,14 @@ static const String _baseString = "packages/flutter_svgl/assets/education/";
   /// SVGL.education.udemyDark(width: 48, height: 48);
   /// ```
   Widget udemyDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/udemy_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -109,14 +110,14 @@ static const String _baseString = "packages/flutter_svgl/assets/education/";
   /// SVGL.education.platzi(width: 48, height: 48);
   /// ```
   Widget platzi({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/platzi.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -133,14 +134,14 @@ static const String _baseString = "packages/flutter_svgl/assets/education/";
   /// SVGL.education.upleveled(width: 48, height: 48);
   /// ```
   Widget upleveled({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/upleveled.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -157,14 +158,14 @@ static const String _baseString = "packages/flutter_svgl/assets/education/";
   /// SVGL.education.learnthis(width: 48, height: 48);
   /// ```
   Widget learnthis({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/learnthis.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -181,14 +182,14 @@ static const String _baseString = "packages/flutter_svgl/assets/education/";
   /// SVGL.education.webdev(width: 48, height: 48);
   /// ```
   Widget webdev({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/web.dev.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -205,20 +206,18 @@ static const String _baseString = "packages/flutter_svgl/assets/education/";
   /// SVGL.education.coursera(width: 48, height: 48);
   /// ```
   Widget coursera({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/coursera.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
     );
   }
-
-
 }

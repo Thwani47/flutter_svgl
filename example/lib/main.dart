@@ -33,7 +33,12 @@ class MyHomePage extends StatelessWidget {
         title: Text(title),
       ),
       body: Column(
-        children: [SVGL.ai.midday(), SVGL.ai.anthropic(), SVGL.ai.basewell()],
+        children: [
+          SVGL.ai.midday(),
+          SVGL.ai.anthropic(),
+          SVGL.ai.basewell(),
+          SVGL.google.googleClassroom(),
+        ],
       ),
     );
   }

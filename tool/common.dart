@@ -125,7 +125,7 @@ String generateWidgetMethod({
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$basePackagePath/$fileName',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -186,7 +186,7 @@ String generateLogoClass({
   buffer.writeln();
   buffer.writeln('class $className {');
   buffer.writeln(
-    'static const String _baseString = "packages/flutter_svgl/assets/$category/";',
+    'static const String _baseString = "https://raw.githubusercontent.com/Thwani47/flutter_svgl/refs/heads/master/assets/$category/";',
   );
   buffer.writeln();
 
@@ -205,37 +205,6 @@ String generateLogoClass({
   }
 
   buffer.writeln();
-
-  buffer.writeln('}');
-
-  return buffer.toString();
-}
-
-/// Generates a complete test file
-String generateTestFile({
-  required String category,
-  required String className,
-  required List<File> svgFiles,
-}) {
-  final buffer = StringBuffer();
-
-  buffer.writeln(generateTestImports());
-  buffer.writeln();
-  buffer.writeln('void main() {');
-
-  for (var file in svgFiles) {
-    final fileName = file.uri.pathSegments.last;
-    final methodName = fileNameToMethod(fileName);
-
-    buffer.write(
-      generateTestMethod(
-        fileName: fileName,
-        methodName: methodName,
-        category: category,
-        className: className,
-      ),
-    );
-  }
 
   buffer.writeln('}');
 

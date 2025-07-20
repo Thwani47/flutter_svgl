@@ -2,7 +2,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 
 class DesignLogos {
-static const String _baseString = "packages/flutter_svgl/assets/design/";
+  static const String _baseString =
+      "https://raw.githubusercontent.com/Thwani47/flutter_svgl/refs/heads/master/assets/design/";
 
   /// Returns the **affinity_designer.svg** SVG as a widget.
   ///
@@ -13,14 +14,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.affinityDesigner(width: 48, height: 48);
   /// ```
   Widget affinityDesigner({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/affinity_designer.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -37,14 +38,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.figma(width: 48, height: 48);
   /// ```
   Widget figma({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/figma.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -61,14 +62,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.adobe(width: 48, height: 48);
   /// ```
   Widget adobe({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/adobe.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -85,14 +86,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.lottielab(width: 48, height: 48);
   /// ```
   Widget lottielab({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/lottielab.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -109,14 +110,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.penpotLight(width: 48, height: 48);
   /// ```
   Widget penpotLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/penpot_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -133,14 +134,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.indesign(width: 48, height: 48);
   /// ```
   Widget indesign({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/indesign.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -156,15 +157,11 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// ```dart
   /// SVGL.design.xd(width: 48, height: 48);
   /// ```
-  Widget xd({
-    double width = 24, 
-    double height = 24, 
-    ColorFilter? colorFilter,
-  }) {
+  Widget xd({double width = 24, double height = 24, ColorFilter? colorFilter}) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/xd.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -181,14 +178,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.axure(width: 48, height: 48);
   /// ```
   Widget axure({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/axure.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -205,14 +202,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.gimp(width: 48, height: 48);
   /// ```
   Widget gimp({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/gimp.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -229,14 +226,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.pitch(width: 48, height: 48);
   /// ```
   Widget pitch({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/pitch.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -253,14 +250,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.layersLight(width: 48, height: 48);
   /// ```
   Widget layersLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/layers_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -277,14 +274,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.premiere(width: 48, height: 48);
   /// ```
   Widget premiere({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/premiere.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -301,14 +298,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.lightroom(width: 48, height: 48);
   /// ```
   Widget lightroom({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/lightroom.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -325,14 +322,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.photoshop(width: 48, height: 48);
   /// ```
   Widget photoshop({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/photoshop.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -349,14 +346,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.layersDark(width: 48, height: 48);
   /// ```
   Widget layersDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/layers_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -373,14 +370,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.illustrator(width: 48, height: 48);
   /// ```
   Widget illustrator({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/illustrator.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -397,14 +394,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.afterEffects(width: 48, height: 48);
   /// ```
   Widget afterEffects({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/after_effects.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -421,14 +418,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.sketchDark(width: 48, height: 48);
   /// ```
   Widget sketchDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/sketch_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -445,14 +442,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.penpotDark(width: 48, height: 48);
   /// ```
   Widget penpotDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/penpot_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -469,14 +466,14 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.canva(width: 48, height: 48);
   /// ```
   Widget canva({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/canva.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -493,20 +490,18 @@ static const String _baseString = "packages/flutter_svgl/assets/design/";
   /// SVGL.design.sketchLight(width: 48, height: 48);
   /// ```
   Widget sketchLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/sketch_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
     );
   }
-
-
 }

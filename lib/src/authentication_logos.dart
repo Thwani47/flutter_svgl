@@ -2,7 +2,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 
 class AuthenticationLogos {
-static const String _baseString = "packages/flutter_svgl/assets/authentication/";
+  static const String _baseString =
+      "https://raw.githubusercontent.com/Thwani47/flutter_svgl/refs/heads/master/assets/authentication/";
 
   /// Returns the **better_auth_light.svg** SVG as a widget.
   ///
@@ -13,14 +14,14 @@ static const String _baseString = "packages/flutter_svgl/assets/authentication/"
   /// SVGL.authentication.betterAuthLight(width: 48, height: 48);
   /// ```
   Widget betterAuthLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/better_auth_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -37,14 +38,14 @@ static const String _baseString = "packages/flutter_svgl/assets/authentication/"
   /// SVGL.authentication.betterAuthDark(width: 48, height: 48);
   /// ```
   Widget betterAuthDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/better_auth_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -61,14 +62,14 @@ static const String _baseString = "packages/flutter_svgl/assets/authentication/"
   /// SVGL.authentication.betterAuth(width: 48, height: 48);
   /// ```
   Widget betterAuth({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/better_auth.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -85,14 +86,14 @@ static const String _baseString = "packages/flutter_svgl/assets/authentication/"
   /// SVGL.authentication.twillio(width: 48, height: 48);
   /// ```
   Widget twillio({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/twillio.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -109,14 +110,14 @@ static const String _baseString = "packages/flutter_svgl/assets/authentication/"
   /// SVGL.authentication.autho(width: 48, height: 48);
   /// ```
   Widget autho({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/authO.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -133,14 +134,14 @@ static const String _baseString = "packages/flutter_svgl/assets/authentication/"
   /// SVGL.authentication.keycloakCopy(width: 48, height: 48);
   /// ```
   Widget keycloakCopy({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/keycloak copy.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -157,14 +158,14 @@ static const String _baseString = "packages/flutter_svgl/assets/authentication/"
   /// SVGL.authentication.authy(width: 48, height: 48);
   /// ```
   Widget authy({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/authy.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -181,14 +182,14 @@ static const String _baseString = "packages/flutter_svgl/assets/authentication/"
   /// SVGL.authentication.jwt(width: 48, height: 48);
   /// ```
   Widget jwt({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/jwt.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -205,14 +206,14 @@ static const String _baseString = "packages/flutter_svgl/assets/authentication/"
   /// SVGL.authentication.keycloak(width: 48, height: 48);
   /// ```
   Widget keycloak({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/keycloak.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -229,14 +230,14 @@ static const String _baseString = "packages/flutter_svgl/assets/authentication/"
   /// SVGL.authentication.clerk(width: 48, height: 48);
   /// ```
   Widget clerk({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/clerk.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -253,14 +254,14 @@ static const String _baseString = "packages/flutter_svgl/assets/authentication/"
   /// SVGL.authentication.bitwarden(width: 48, height: 48);
   /// ```
   Widget bitwarden({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/bitwarden.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -277,14 +278,14 @@ static const String _baseString = "packages/flutter_svgl/assets/authentication/"
   /// SVGL.authentication.clerkWordkmark(width: 48, height: 48);
   /// ```
   Widget clerkWordkmark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/clerk_wordkmark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -301,14 +302,14 @@ static const String _baseString = "packages/flutter_svgl/assets/authentication/"
   /// SVGL.authentication.workOS(width: 48, height: 48);
   /// ```
   Widget workOS({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/work_OS.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -325,20 +326,18 @@ static const String _baseString = "packages/flutter_svgl/assets/authentication/"
   /// SVGL.authentication.betterAuthWordmark(width: 48, height: 48);
   /// ```
   Widget betterAuthWordmark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/better_auth_wordmark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
     );
   }
-
-
 }

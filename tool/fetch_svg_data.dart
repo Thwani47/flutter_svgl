@@ -4,6 +4,8 @@ import 'dart:io';
 
 import 'package:http/http.dart' as http;
 
+enum DownloadResult { success, failed, skipped }
+
 void main() async {
   final svgDataUrl = Uri.parse(
     "https://raw.githubusercontent.com/pheralb/svgl/main/src/data/svgs.ts",
@@ -26,6 +28,7 @@ void main() async {
 
     int downloadedCount = 0;
     int failedCount = 0;
+    int skippedCount = 0;
 
     for (var item in svgList) {
       final title = item['title'] ?? 'Unknown';
@@ -42,36 +45,42 @@ void main() async {
 
       if (route is String) {
         // Single SVG file
-        final success = await _downloadSvg(route, 'assets/$category', title);
-        if (success) {
+        final result = await _downloadSvg(route, 'assets/$category', title);
+        if (result == DownloadResult.success) {
           downloadedCount++;
-        } else {
+        } else if (result == DownloadResult.failed) {
           failedCount++;
+        } else {
+          skippedCount++;
         }
       } else if (route is Map) {
         // Light and dark variants
         if (route['light'] != null) {
-          final success = await _downloadSvg(
+          final result = await _downloadSvg(
             route['light'],
             'assets/$category',
             '${title}_light',
           );
-          if (success) {
+          if (result == DownloadResult.success) {
             downloadedCount++;
-          } else {
+          } else if (result == DownloadResult.failed) {
             failedCount++;
+          } else {
+            skippedCount++;
           }
         }
         if (route['dark'] != null) {
-          final success = await _downloadSvg(
+          final result = await _downloadSvg(
             route['dark'],
             'assets/$category',
             '${title}_dark',
           );
-          if (success) {
+          if (result == DownloadResult.success) {
             downloadedCount++;
-          } else {
+          } else if (result == DownloadResult.failed) {
             failedCount++;
+          } else {
+            skippedCount++;
           }
         }
       }
@@ -79,8 +88,11 @@ void main() async {
 
     print('\n=== Download Summary ===');
     print('Successfully downloaded: $downloadedCount files');
+    print('Skipped (already exist): $skippedCount files');
     print('Failed downloads: $failedCount files');
-    print('Total processed: ${downloadedCount + failedCount} files');
+    print(
+      'Total processed: ${downloadedCount + skippedCount + failedCount} files',
+    );
   } else {
     print('Request failed with status ${response.statusCode}');
   }
@@ -194,7 +206,7 @@ Map<String, dynamic> _parseObjectString(String objectStr) {
   return result;
 }
 
-Future<bool> _downloadSvg(
+Future<DownloadResult> _downloadSvg(
   String svgUrl,
   String directory,
   String fileName,
@@ -207,6 +219,14 @@ Future<bool> _downloadSvg(
             .replaceAll(' ', '_')
             .toLowerCase();
 
+    final file = File('$directory/$cleanFileName.svg');
+
+    // Check if file already exists
+    if (await file.exists()) {
+      print('  ↻ Skipped (already exists): ${file.path}');
+      return DownloadResult.skipped;
+    }
+
     final fullUrl =
         svgUrl.startsWith('http') ? svgUrl : 'https://svgl.vercel.app$svgUrl';
 
@@ -215,16 +235,15 @@ Future<bool> _downloadSvg(
     final response = await http.get(Uri.parse(fullUrl));
 
     if (response.statusCode == 200) {
-      final file = File('$directory/$cleanFileName.svg');
       await file.writeAsBytes(response.bodyBytes);
       print('  ✓ Saved: ${file.path}');
-      return true;
+      return DownloadResult.success;
     } else {
       print('  ✗ Failed to download: ${response.statusCode}');
-      return false;
+      return DownloadResult.failed;
     }
   } catch (e) {
     print('  ✗ Error downloading $fileName: $e');
-    return false;
+    return DownloadResult.failed;
   }
 }

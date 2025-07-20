@@ -2,7 +2,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 
 class PaymentLogos {
-static const String _baseString = "packages/flutter_svgl/assets/payment/";
+  static const String _baseString =
+      "https://raw.githubusercontent.com/Thwani47/flutter_svgl/refs/heads/master/assets/payment/";
 
   /// Returns the **mercado_pago.svg** SVG as a widget.
   ///
@@ -13,14 +14,14 @@ static const String _baseString = "packages/flutter_svgl/assets/payment/";
   /// SVGL.payment.mercadoPago(width: 48, height: 48);
   /// ```
   Widget mercadoPago({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/mercado_pago.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -37,20 +38,18 @@ static const String _baseString = "packages/flutter_svgl/assets/payment/";
   /// SVGL.payment.paypal(width: 48, height: 48);
   /// ```
   Widget paypal({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/paypal.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
     );
   }
-
-
 }

@@ -2,7 +2,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 
 class SocialLogos {
-static const String _baseString = "packages/flutter_svgl/assets/social/";
+  static const String _baseString =
+      "https://raw.githubusercontent.com/Thwani47/flutter_svgl/refs/heads/master/assets/social/";
 
   /// Returns the **patreon_light.svg** SVG as a widget.
   ///
@@ -13,14 +14,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.patreonLight(width: 48, height: 48);
   /// ```
   Widget patreonLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/patreon_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -37,14 +38,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.carrd(width: 48, height: 48);
   /// ```
   Widget carrd({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/carrd.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -61,14 +62,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.instagramDark(width: 48, height: 48);
   /// ```
   Widget instagramDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/instagram_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -85,14 +86,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.meta(width: 48, height: 48);
   /// ```
   Widget meta({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/meta.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -109,14 +110,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.xFormerlyTwitterDark(width: 48, height: 48);
   /// ```
   Widget xFormerlyTwitterDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/x_(formerly_twitter)_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -133,14 +134,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.dailydevLight(width: 48, height: 48);
   /// ```
   Widget dailydevLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/daily.dev_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -157,14 +158,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.instagramLight(width: 48, height: 48);
   /// ```
   Widget instagramLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/instagram_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -181,14 +182,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.xFormerlyTwitterLight(width: 48, height: 48);
   /// ```
   Widget xFormerlyTwitterLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/x_(formerly_twitter)_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -205,14 +206,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.matrixLight(width: 48, height: 48);
   /// ```
   Widget matrixLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/matrix_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -229,14 +230,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.mastodon(width: 48, height: 48);
   /// ```
   Widget mastodon({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/mastodon.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -252,15 +253,11 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// ```dart
   /// SVGL.social.vk(width: 48, height: 48);
   /// ```
-  Widget vk({
-    double width = 24, 
-    double height = 24, 
-    ColorFilter? colorFilter,
-  }) {
+  Widget vk({double width = 24, double height = 24, ColorFilter? colorFilter}) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/vk.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -277,14 +274,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.arcLight(width: 48, height: 48);
   /// ```
   Widget arcLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/arc_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -301,14 +298,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.threadsLight(width: 48, height: 48);
   /// ```
   Widget threadsLight({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/threads_light.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -325,14 +322,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.bluesky(width: 48, height: 48);
   /// ```
   Widget bluesky({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/bluesky.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -349,14 +346,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.telegram(width: 48, height: 48);
   /// ```
   Widget telegram({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/telegram.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -373,14 +370,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.infojobs(width: 48, height: 48);
   /// ```
   Widget infojobs({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/infojobs.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -397,14 +394,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.threadsDark(width: 48, height: 48);
   /// ```
   Widget threadsDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/threads_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -421,14 +418,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.peerlist(width: 48, height: 48);
   /// ```
   Widget peerlist({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/peerlist.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -445,14 +442,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.matrixDark(width: 48, height: 48);
   /// ```
   Widget matrixDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/matrix_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -469,14 +466,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.facebook(width: 48, height: 48);
   /// ```
   Widget facebook({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/facebook.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -493,14 +490,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.pinterest(width: 48, height: 48);
   /// ```
   Widget pinterest({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/pinterest.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -517,14 +514,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.whatsapp(width: 48, height: 48);
   /// ```
   Widget whatsapp({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/whatsapp.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -541,14 +538,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.dailydevDark(width: 48, height: 48);
   /// ```
   Widget dailydevDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/daily.dev_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -565,14 +562,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.arcDark(width: 48, height: 48);
   /// ```
   Widget arcDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/arc_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -589,14 +586,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.reddit(width: 48, height: 48);
   /// ```
   Widget reddit({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/reddit.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -613,14 +610,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.patreonDark(width: 48, height: 48);
   /// ```
   Widget patreonDark({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/patreon_dark.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -637,14 +634,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.linkedin(width: 48, height: 48);
   /// ```
   Widget linkedin({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/linkedin.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -661,14 +658,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.hashnode(width: 48, height: 48);
   /// ```
   Widget hashnode({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/hashnode.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -685,14 +682,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.twitter(width: 48, height: 48);
   /// ```
   Widget twitter({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/twitter.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -709,14 +706,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.messenger(width: 48, height: 48);
   /// ```
   Widget messenger({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/messenger.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -733,14 +730,14 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.skype(width: 48, height: 48);
   /// ```
   Widget skype({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/skype.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
@@ -757,20 +754,18 @@ static const String _baseString = "packages/flutter_svgl/assets/social/";
   /// SVGL.social.tiktok(width: 48, height: 48);
   /// ```
   Widget tiktok({
-    double width = 24, 
-    double height = 24, 
+    double width = 24,
+    double height = 24,
     ColorFilter? colorFilter,
   }) {
     return SizedBox(
       width: width,
       height: height,
-      child: SvgPicture.asset(
+      child: SvgPicture.network(
         '$_baseString/tiktok.svg',
         fit: BoxFit.fill,
         colorFilter: colorFilter,
       ),
     );
   }
-
-
 }
